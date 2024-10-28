@@ -13,7 +13,7 @@ const chilometri = parseInt(prompt("quanti km devi fare?"));
 const etaPasseggero = parseInt(prompt('Qual e la sua eta?'));
 let prezzoTotale;
 const prezzoXkm = 0.21;
-let scontoDaApplicare = 0
+let scontoDaApplicare = 0;
 
 prezzoTotale = chilometri * prezzoXkm
 
@@ -26,11 +26,12 @@ else if (etaPasseggero > 65) {
     prezzoTotale = prezzoTotale - scontoDaApplicare
 }
 
+prezzoTotale = prezzoTotale.toFixed(2);
 
 
 
 
 
-console.log(chilometri)
-console.log(etaPasseggero)
-console.log(prezzoTotale)
+console.log(chilometri);
+console.log(`la sua eta e ${etaPasseggero} `);
+console.log("Il prezzo che dovra pagare sara" + " " + prezzoTotale);
